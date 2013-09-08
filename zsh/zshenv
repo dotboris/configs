@@ -1,0 +1,32 @@
+# =========================================
+# Environment Variables
+# =========================================
+
+# fixing LESS Colors
+export LESS_TERMCAP_mb=$(printf "\e[1;37m")
+export LESS_TERMCAP_md=$(printf "\e[1;37m")
+export LESS_TERMCAP_me=$(printf "\e[0m")
+export LESS_TERMCAP_se=$(printf "\e[0m")
+export LESS_TERMCAP_so=$(printf "\e[1;47;30m")
+export LESS_TERMCAP_ue=$(printf "\e[0m")
+export LESS_TERMCAP_us=$(printf "\e[0;36m")
+
+# fixin java font rendering problems
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd"
+
+# setting global editor to VIM
+export EDITOR=vim
+
+# pointing 
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+
+# fix flash no-click problem
+export GDK_NATIVE_WINDOWS=1
+export OPERAPLUGINWRAPPER_PRIORITY=0
+export OPERA_KEEP_BLOCKED_PLUGIN=1
+
+export SDL_AUDIODRIVER=alsa
+export LC_NUMERIC=POSIX
+
+# rubygems stuff
+export GEM_HOME='~/.gem/ruby/2.0.0'
