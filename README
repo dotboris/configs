@@ -1,1 +1,22 @@
+What is this?
+=============
+
 This repo contains config files that I use across diffrent systems.
+
+Dependencies
+============
+
+Some of these configs depend on a number of plugins / apps. I'll try to keep a
+list in here.
+
+zsh
+---
+
+- zsh 5.x (last time I checked, 4.x didn't take it)
+- oh-my-zsh
+
+oh-my-zsh
+---------
+
+- zsh 5.x (the boris theme requires 5.x)
+
