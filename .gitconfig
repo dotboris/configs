@@ -1,0 +1,10 @@
+[user]
+	name = Boris Bera
+	email = bboris@rsoft.ca
+[color]
+	ui = auto
+[alias]
+	l = log --all --decorate=full --graph
+	hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+[push]
+	default = upstream
