@@ -3,8 +3,14 @@ emulate sh -c 'source /etc/profile'
 # set the path
 pathdirs=(
 	~/bin
-	~/.gem/ruby/2.0.0/bin
 )
+
+# add gem path
+gem_path=`gem environment gempath`
+for p in ${(s/:/)gem_path}; do
+	pathdirs+="$p/bin"
+done
+
 for dir in $pathdirs; do
 	if [ -d $dir ]; then
 		PATH+=":$dir"
