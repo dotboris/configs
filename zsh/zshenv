@@ -27,3 +27,6 @@ export OPERA_KEEP_BLOCKED_PLUGIN=1
 
 export SDL_AUDIODRIVER=alsa
 export LC_NUMERIC=POSIX
+
+ruby_version=`ruby -e 'puts RUBY_VERSION'`
+export GEM_HOME="$HOME/.gem/ruby/$ruby_version"
