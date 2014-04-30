@@ -248,7 +248,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
 	-- custom commands
-    awful.key({ modkey,           }, "w", function () awful.util.spawn("opera") end),
+    awful.key({ modkey,           }, "w", function () awful.util.spawn("chromium") end),
     awful.key({ modkey,           }, "f", function () awful.util.spawn("thunar") end),
 
 	-- Screenshots
@@ -256,9 +256,9 @@ globalkeys = awful.util.table.join(
     awful.key({}, "Print", function () awful.util.spawn("scrot -s -b -e 'mv $f ~/pictures/captures'") end),
 
 	-- Audio controls
-    awful.key({ modkey,}, "KP_Add", function () awful.util.spawn("amixer set Headphone 1+ unmute") end),
-    awful.key({ modkey,}, "KP_Subtract", function () awful.util.spawn("amixer set Headphone 1- unmute") end),
-    awful.key({ modkey,}, "KP_Enter", function () awful.util.spawn("amixer set Headphone toggle") end),
+    awful.key({ modkey,}, "KP_Add", function () awful.util.spawn("amixer set Master 1+ unmute") end),
+    awful.key({ modkey,}, "KP_Subtract", function () awful.util.spawn("amixer set Master 1- unmute") end),
+    awful.key({ modkey,}, "KP_Enter", function () awful.util.spawn("amixer set Master toggle") end),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
