@@ -1,0 +1,12 @@
+! terminal colors ------------------------------------------------------------
+
+#include ".colorschemes/raven_m9-dark"
+
+! scroll bar
+URxvt*scrollBar:false
+URxvt*scrollstyle:plain
+
+! clickable URLs
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/chromium
+URxvt.matcher.button:   1 
