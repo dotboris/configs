@@ -250,6 +250,7 @@ globalkeys = awful.util.table.join(
 	-- custom commands
     awful.key({ modkey,           }, "w", function () awful.util.spawn("chromium") end),
     awful.key({ modkey,           }, "f", function () awful.util.spawn("thunar") end),
+    awful.key({ modkey,           }, "F12", function () awful.util.spawn("slock") end),
 
 	-- Screenshots
     awful.key({}, "Print", function () awful.util.spawn("scrot -e 'mv $f ~/pictures/captures'") end),
