@@ -4,10 +4,12 @@ set nocompatible
 
 filetype off
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
 set completeopt-=preview
+
+Plugin 'gmarik/Vundle.vim'
 
 " vundle plugins
 Plugin 'tpope/vim-fugitive'
@@ -15,6 +17,8 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'kchmck/vim-coffee-script'
 "Plugin 'xuhdev/vim-latex-live-preview'
 
+call vundle#end()
+filetype plugin indent on
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -32,8 +36,6 @@ set number
 set hls
 set ts=4 sw=4 expandtab
 set autoindent
-
-filetype plugin indent on
 
 " Language specific setting
 autocmd FileType text setlocal textwidth=78
