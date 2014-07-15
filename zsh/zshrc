@@ -69,5 +69,5 @@ bindkey "${key[Down]}" down-line-or-beginning-search
 
 # aliasas
 alias ls='ls --color=auto'
-alias sudo='sudo '
+alias sudo='nocorrect sudo'
 alias sceen='screen -h 3000'
