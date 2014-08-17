@@ -32,6 +32,7 @@ set mouse=a
 
 " User defines options
 syntax on
+set background=dark
 set number
 set hls
 set ts=4 sw=4 expandtab
