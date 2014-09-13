@@ -49,8 +49,9 @@ let g:vim_markdown_folding_disabled=1
 " latex settings
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
+let g:Tex_ViewRule_pdf = "evince"
+let g:Tex_CompileRule_pdf = "xelatex -interaction=nonstopmode $*"
+let g:Tex_DefaultTargetFormat = "pdf"
 
-" live preview
-autocmd Filetype tex setl updatetime=1
-let g:livepreview_previewer = 'evince'
-
+" fix latexsuite é
+imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
