@@ -15,10 +15,13 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 "Bundle 'Valloric/YouCompleteMe'
 "Plugin 'kchmck/vim-coffee-script'
-"Plugin 'xuhdev/vim-latex-live-preview'
 
 call vundle#end()
 filetype plugin indent on
+
+" encoding
+set encoding=utf-8
+setglobal fileencoding=utf-8
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -28,6 +31,9 @@ set ruler
 set showcmd
 set incsearch
 
+set nottybuiltin
+set ttyfast
+set ttymouse=xterm
 set mouse=a
 
 " User defines options
