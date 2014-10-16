@@ -41,7 +41,7 @@ end
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
+terminal = "terminology"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -260,6 +260,13 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,}, "KP_Add", function () awful.util.spawn("amixer set Master 1+ unmute") end),
     awful.key({ modkey,}, "KP_Subtract", function () awful.util.spawn("amixer set Master 1- unmute") end),
     awful.key({ modkey,}, "KP_Enter", function () awful.util.spawn("amixer set Master toggle") end),
+    awful.key({}, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 1+ unmute") end),
+    awful.key({}, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 1- unmute") end),
+    awful.key({}, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
+
+    -- Backlight
+    awful.key({}, "XF86MonBrightnessUp", function() awful.util.spawn("xbacklight + 5") end),
+    awful.key({}, "XF86MonBrightnessDown", function() awful.util.spawn("xbacklight - 5") end),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
