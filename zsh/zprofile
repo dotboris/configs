@@ -6,10 +6,7 @@ pathdirs=(
 )
 
 # add gem path
-gem_path=`gem environment gempath`
-for p in ${(s/:/)gem_path}; do
-	pathdirs+="$p/bin"
-done
+pathdirs+="`ruby -e 'print Gem.user_dir'`/bin"
 
 for dir in $pathdirs; do
 	if [ -d $dir ]; then
