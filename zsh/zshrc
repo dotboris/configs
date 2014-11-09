@@ -46,6 +46,9 @@ plugins=(git colored-man gem bundler rake)
 
 source $ZSH/oh-my-zsh.sh
 
+# Store completion cache in home dir
+zstyle ':completion::complete:*' cache-path $HOME/.zsh_cache
+
 # history
 HISTZISE=1000
 SAVEHIST=1000
