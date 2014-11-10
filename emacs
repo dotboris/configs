@@ -28,6 +28,10 @@
 ;; R & stats
 (require 'ess-site)
 
+;; Markdown
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 ;; Keyboard shortcuts
 
 ;; magit
