@@ -19,6 +19,9 @@
 ;; LaTeX
 (setq TeX-PDF-mode t)
 
+;; R & stats
+(require 'ess-site)
+
 ;; Keyboard shortcuts
 
 ;; magit
