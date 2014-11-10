@@ -11,6 +11,11 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/darkula")
 (load-theme 'Darkula t)
 
+;; Auto complete
+(require 'auto-complete-config)
+(ac-config-default)
+(global-set-key (kbd "C-SPC") 'auto-complete)
+
 ;; LaTeX
 (setq TeX-PDF-mode t)
 
