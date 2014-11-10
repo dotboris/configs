@@ -53,8 +53,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
-local layouts =
-{
+local layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -214,6 +213,8 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
+    awful.key({ modkey,           }, ",", awful.tag.viewprev),
+    awful.key({ modkey,           }, ".", awful.tag.viewnext),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
     awful.key({ modkey,           }, "j",
@@ -242,6 +243,10 @@ globalkeys = awful.util.table.join(
             end
         end),
 
+    -- Relative screen focus
+    awful.key({ modkey, }, "u", function() awful.screen.focus_relative(-1) end),
+    awful.key({ modkey, }, "i", function() awful.screen.focus_relative(1) end),
+    
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
@@ -254,7 +259,7 @@ globalkeys = awful.util.table.join(
 
 	-- Screenshots
     awful.key({}, "Print", function () awful.util.spawn("scrot -e 'mv $f ~/pictures/captures'") end),
-    awful.key({}, "Print", function () awful.util.spawn("scrot -s -b -e 'mv $f ~/pictures/captures'") end),
+    awful.key({ modkey,           }, "Print", function () awful.util.spawn("scrot -s -b -e 'mv $f ~/pictures/captures'") end),
 
 	-- Audio controls
     awful.key({ modkey,}, "KP_Add", function () awful.util.spawn("amixer set Master 1+ unmute") end),
