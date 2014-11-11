@@ -70,7 +70,6 @@
 
 (setq packages:scheme
       '(geiser
-	quack
 	ac-geiser))
 
 (setq packages:statictics
