@@ -121,3 +121,4 @@
 (global-linum-mode t)
 (global-hl-line-mode t)
 (show-paren-mode t)
+(pending-delete-mode t)
