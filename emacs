@@ -45,6 +45,9 @@
 	(:name expand-region
 	       :after (progn
 			(global-set-key (kbd "M-m") 'er/expand-region)))
+	(:name smartparens
+	       :after (progn
+			(smartparens-global-mode t)))
 	))
 
 ;; packages
