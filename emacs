@@ -38,13 +38,13 @@
 			  '(add-to-list 'ac-modes 'geiser-repl-mode))))
 	(:name magit
 	       :after (progn
-			(global-set-key (kbd "C-x g") 'magit-status)))
+			(global-set-key (kbd "C-k") 'magit-status)))
 	(:name drag-stuff
 	       :after (progn
 			(drag-stuff-global-mode t)))
 	(:name expand-region
 	       :after (progn
-			(global-set-key (kbd "M-m") 'er/expand-region)))
+			(global-set-key (kbd "C-w") 'er/expand-region)))
 	(:name smartparens
 	       :after (progn
 			(require 'smartparens)
