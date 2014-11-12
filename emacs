@@ -47,8 +47,13 @@
 			(global-set-key (kbd "M-m") 'er/expand-region)))
 	(:name smartparens
 	       :after (progn
+			(require 'smartparens)
+			(add-to-list 'sp--lisp-modes 'geiser-mode)
+			(add-to-list 'sp--lisp-modes 'geiser-repl-mode)
+			(require 'smartparens-config)
 			(smartparens-global-mode t)
-			(setq sp-highlight-pair-overlay nil)))
+			(setq sp-highlight-pair-overlay nil)
+			(setq sp-autoescape-string-quote nil)))
 	))
 
 ;; packages
