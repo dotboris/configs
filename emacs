@@ -30,6 +30,9 @@
 	(:name auto-complete
 	       :after (progn
 			(global-set-key (kbd "C-SPC") 'auto-complete)))
+	(:name yasnippet
+	       :after (progn
+			(yas-global-mode 1)))
 	(:name ac-geiser
 	       :after (progn
 			(add-hook 'geiser-mode-hook 'ac-geiser-setup)
@@ -61,6 +64,7 @@
       '(el-get
 	
 	auto-complete
+	yasnippet
 
 	drag-stuff
 	smartparens
