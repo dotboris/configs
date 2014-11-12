@@ -47,7 +47,8 @@
 			(global-set-key (kbd "M-m") 'er/expand-region)))
 	(:name smartparens
 	       :after (progn
-			(smartparens-global-mode t)))
+			(smartparens-global-mode t)
+			(setq sp-highlight-pair-overlay nil)))
 	))
 
 ;; packages
