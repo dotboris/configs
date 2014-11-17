@@ -57,6 +57,11 @@
 			(smartparens-global-mode t)
 			(setq sp-highlight-pair-overlay nil)
 			(setq sp-autoescape-string-quote nil)))
+	(:name slime
+	       :after (progn
+			;; I don't pick a default lisp implementation because
+			;; I don't use lisp enought to have a preference
+			(setq slime-contribs '(slime-fancy))))
 	))
 
 ;; packages
@@ -85,6 +90,9 @@
       '(geiser
 	ac-geiser))
 
+(setq packages:lisp
+      '(slime))
+
 (setq packages:statictics
       '(ess))
 
@@ -101,6 +109,7 @@
 	packages:basic-modes
 	packages:latex
 	packages:scheme
+	packages:slime
 	packages:statictics
 	)
 
