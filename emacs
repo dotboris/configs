@@ -61,6 +61,10 @@
 	       :after (progn
 			;; I don't pick a default lisp implementation because
 			;; I don't use lisp enought to have a preference
+			(defun slime-use-ccl ()
+			    "Use ccl as the interpreter for slime. (`/usr/bin/ccl')"
+			    (interactive)
+			    (setq inferior-lisp-program "/usr/bin/ccl"))
 			(setq slime-contribs '(slime-fancy))))
 	))
 
@@ -109,7 +113,7 @@
 	packages:basic-modes
 	packages:latex
 	packages:scheme
-	packages:slime
+	packages:lisp
 	packages:statictics
 	)
 
