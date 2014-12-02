@@ -48,9 +48,11 @@
 	(:name projectile
 	       :after (progn
 			(projectile-global-mode)
+			(global-set-key (kbd "C-S-o") 'projectile-find-file)
+			
+			(require 'helm-projectile)
 			(setq projectile-completion-system 'helm)
-			(helm-projectile-on)
-			(global-set-key (kbd "C-S-o") 'projectile-find-file)))
+			(helm-projectile-on)))
 	(:name helm
 	       :after (progn
 			(require 'helm-config)
@@ -104,8 +106,8 @@
 (setq packages:essentials
       '(el-get
 
-	projectile
 	helm
+	projectile
 	
 	auto-complete
 	yasnippet
