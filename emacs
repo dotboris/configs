@@ -158,11 +158,16 @@
 	irony-mode
 	ac-irony))
 
+(setq packages:scala
+      '(scala-mode2
+	sbt-mode))
+
 ;; install packages (edit to your requirements)
 (el-get 'sync
 	packages:essentials
 	packages:basic-modes
 	packages:cpp
+	packages:scala
 	packages:latex
 	packages:scheme
 	packages:lisp
