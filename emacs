@@ -101,6 +101,21 @@
 			    (interactive)
 			    (setq inferior-lisp-program "/usr/bin/ccl"))
 			(setq slime-contribs '(slime-fancy))))
+	(:name irony-mode
+	       :after (progn
+			(add-hook 'c++-mode-hook 'irony-mode)
+			(add-hook 'c-mode-hook 'irony-mode)
+			(add-hook 'objc-mode-hook 'irony-mode)))
+	(:name ac-irony
+	       :after (progn
+			(defun my-ac-irony-setup ()
+			  (yas-minor-mode 1)
+			  (auto-complete-mode 1)
+
+			  (add-to-list 'ac-sources 'ac-source-irony)
+			  (define-key irony-mode-map (kbd "C-SPC") 'ac-complete-irony-async))
+
+			(add-hook 'irony-mode-hook 'my-ac-irony-setup)))
 	))
 
 ;; packages
@@ -138,10 +153,16 @@
 (setq packages:statictics
       '(ess))
 
+(setq packages:cpp
+      '(cmake-mode
+	irony-mode
+	ac-irony))
+
 ;; install packages (edit to your requirements)
 (el-get 'sync
 	packages:essentials
 	packages:basic-modes
+	packages:cpp
 	packages:latex
 	packages:scheme
 	packages:lisp
