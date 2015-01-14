@@ -44,7 +44,11 @@
 						 '("xelatexmk"
 						   "latexmk --xelatex --interaction=nonstopmode"
 						   TeX-run-command t t :help "Run latexmk with xelatex"))
-				    (setq TeX-command-default "xelatexmk")))))
+                                    (add-to-list 'TeX-command-list
+						 '("lualatexmk"
+						   "latexmk --lualatex --interaction=nonstopmode"
+						   TeX-run-command t t :help "Run latexmk with lualatex"))
+				    (setq TeX-command-default "lualatexmk")))))
 	(:name projectile
 	       :after (progn
 			(projectile-global-mode)
