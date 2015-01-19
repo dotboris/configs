@@ -120,6 +120,7 @@
 			  (define-key irony-mode-map (kbd "C-SPC") 'ac-complete-irony-async))
 
 			(add-hook 'irony-mode-hook 'my-ac-irony-setup)))
+        (:name pddl-mode :after (progn (require 'pddl-mode)))
 	))
 
 ;; packages
