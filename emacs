@@ -166,6 +166,10 @@
       '(scala-mode2
 	sbt-mode))
 
+;; odd modes and packages for very specific uses
+(setq packages:misc
+      '(pddl-mode))
+
 ;; install packages (edit to your requirements)
 (el-get 'sync
 	packages:essentials
@@ -176,6 +180,7 @@
 	packages:scheme
 	packages:lisp
 	packages:statictics
+        packages:misc
 	)
 
 ;; text manipulation functions
