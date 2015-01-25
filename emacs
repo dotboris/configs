@@ -123,7 +123,7 @@
         (:name pddl-mode
                :after (progn
                         (require 'pddl-mode)
-                        (add-to-list 'auto-mode-alist '("\\.pddl\\'" . pddl-mode))))
+                        (add-to-list 'auto-mode-alist '("\\.pddl\\'" . PDDL-mode))))
 	))
 
 ;; packages
