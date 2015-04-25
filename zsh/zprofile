@@ -1,15 +1,2 @@
 emulate sh -c 'source /etc/profile'
 
-# set the path
-pathdirs=(
-	~/bin
-)
-
-# add gem path
-pathdirs+="`ruby -e 'print Gem.user_dir'`/bin"
-
-for dir in $pathdirs; do
-	if [ -d $dir ]; then
-		PATH+=":$dir"
-	fi
-done
