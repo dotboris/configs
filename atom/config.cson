@@ -1,0 +1,17 @@
+"*":
+  welcome:
+    showOnStartup: false
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  core:
+    autoHideMenuBar: true
+    projectHome: "~/code"
+  editor:
+    invisibles:
+      {}
+    fontFamily: "Source Code Pro"
+    fontSize: 14
+    scrollPastEnd: true
+    softTabs: false
+    showInvisibles: true
