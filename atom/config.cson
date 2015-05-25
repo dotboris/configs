@@ -15,3 +15,13 @@
     scrollPastEnd: true
     softTabs: false
     showInvisibles: true
+  linter:
+    {}
+  autosave:
+    enabled: true
+".cs.source":
+  editor:
+    tabLength: 4
+".csx.source":
+  editor:
+    tabLength: 2
