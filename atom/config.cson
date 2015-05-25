@@ -13,7 +13,7 @@
     fontFamily: "Source Code Pro"
     fontSize: 14
     scrollPastEnd: true
-    softTabs: false
+    softTabs: true
     showInvisibles: true
   linter:
     {}
