@@ -1,0 +1,6 @@
+packages: [
+  "linter"
+  "merge-conflicts"
+  "package-sync"
+  "vim-mode"
+]
