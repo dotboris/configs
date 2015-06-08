@@ -7,4 +7,5 @@ packages: [
   "vim-surround"
   "wrap-lines"
   "termrk"
+  "file-icons"
 ]
