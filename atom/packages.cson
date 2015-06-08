@@ -3,4 +3,8 @@ packages: [
   "merge-conflicts"
   "package-sync"
   "vim-mode"
+  "ex-mode"
+  "vim-surround"
+  "wrap-lines"
+  "termrk"
 ]
