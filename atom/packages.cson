@@ -9,6 +9,18 @@ packages: [
   "termrk"
   "file-icons"
 
+  # scala
   "language-scala"
   "linter-scalac"
+
+  # Windows and friends
+  "omnisharp-atom"
+  "language-batchfile"
+  "language-powershell"
+
+  # ruby
+  "linter-ruby"
+  "linter-rubocop"
+  "linter-reek"
+  "language-rspec"
 ]
