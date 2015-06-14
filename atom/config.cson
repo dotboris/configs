@@ -19,6 +19,8 @@
     {}
   autosave:
     enabled: true
+  Termrk:
+    fontFamily: "Source Code Pro"
 ".cs.source":
   editor:
     tabLength: 4

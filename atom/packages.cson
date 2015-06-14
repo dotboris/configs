@@ -8,4 +8,7 @@ packages: [
   "wrap-lines"
   "termrk"
   "file-icons"
+
+  "language-scala"
+  "linter-scalac"
 ]
