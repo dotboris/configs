@@ -23,4 +23,14 @@ packages: [
   "linter-rubocop"
   "linter-reek"
   "language-rspec"
+
+  # web stuff
+  "linter-csslint"
+  "linter-htmlhint"
+  "linter-coffescript"
+  "linter-jshint"
+
+  # lint them all
+  "linter-shellcheck"
+  "linter-xmllint"
 ]

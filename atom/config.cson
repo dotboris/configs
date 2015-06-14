@@ -16,7 +16,7 @@
     softTabs: true
     showInvisibles: true
   linter:
-    {}
+    statusBar: "Show error if the cursor is in range"
   autosave:
     enabled: true
   Termrk:
