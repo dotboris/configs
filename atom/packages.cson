@@ -29,8 +29,12 @@ packages: [
   "linter-htmlhint"
   "linter-coffescript"
   "linter-jshint"
+  "language-javascript-jsx"
 
   # lint them all
   "linter-shellcheck"
   "linter-xmllint"
+
+  # saltstack
+  "language-salt"
 ]
