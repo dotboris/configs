@@ -8,13 +8,13 @@ packages: [
   "wrap-lines"
   "termrk"
   "file-icons"
+  "advances-new-file"
 
   # scala
   "language-scala"
   "linter-scalac"
 
   # Windows and friends
-  "omnisharp-atom"
   "language-batchfile"
   "language-powershell"
 
