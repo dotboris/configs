@@ -8,7 +8,7 @@ packages: [
   "wrap-lines"
   "termrk"
   "file-icons"
-  "advances-new-file"
+  "advanced-new-file"
 
   # scala
   "language-scala"
