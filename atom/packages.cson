@@ -2,13 +2,19 @@ packages: [
   "linter"
   "merge-conflicts"
   "package-sync"
-  "vim-mode"
-  "ex-mode"
-  "vim-surround"
   "wrap-lines"
   "termrk"
   "file-icons"
   "advanced-open-file"
+
+  # general editing
+  "autocomplete-paths"
+  "autocomplete-ctags"
+
+  # vim ux
+  "vim-mode"
+  "ex-mode"
+  "vim-surround"
 
   # scala
   "language-scala"
@@ -18,11 +24,14 @@ packages: [
   "language-batchfile"
   "language-powershell"
 
+  # fsharp
+  "language-fsharp"
+
   # ruby
   "linter-ruby"
   "linter-rubocop"
-  "linter-reek"
   "language-rspec"
+  "autocomplete-ruby"
 
   # web stuff
   "linter-csslint"
