@@ -1,26 +1,26 @@
 "*":
-  welcome:
-    showOnStartup: false
-  "vim-mode":
-    useClipboardAsDefaultRegister: true
-    useSmartcaseForSearch: true
+  Termrk:
+    fontFamily: "Source Code Pro"
+  autosave: {}
   core:
     autoHideMenuBar: true
     projectHome: "~/code"
   editor:
-    invisibles:
-      {}
     fontFamily: "Source Code Pro"
-    fontSize: 14
+    invisibles: {}
     scrollPastEnd: true
-    softTabs: true
     showInvisibles: true
+    softTabs: true
   linter:
     statusBar: "Show error if the cursor is in range"
-  autosave:
-    {}
-  Termrk:
-    fontFamily: "Source Code Pro"
+  "linter-scalac":
+    compileAllClassesOnLint: true
+    compileClassesToClasspath: true
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  welcome:
+    showOnStartup: false
 ".cs.source":
   editor:
     tabLength: 4
