@@ -1,20 +1,28 @@
 packages: [
+
+  # core features
   "linter"
-  "merge-conflicts"
   "package-sync"
-  "wrap-lines"
   "termrk"
-  "file-icons"
   "advanced-open-file"
 
-  # general editing
+  # editing
+  "file-icons"
+  "wrap-lines"
   "autocomplete-paths"
   "autocomplete-ctags"
-
-  # vim ux
   "vim-mode"
   "ex-mode"
   "vim-surround"
+  "parinfer"
+
+  # clojure
+  "linter-clojure"
+  "linter-lein"
+  "linter-eastwood"
+
+  # VCS
+  "merge-conflicts"
 
   # scala
   "language-scala"
@@ -24,7 +32,6 @@ packages: [
   "language-batchfile"
   "language-powershell"
 
-  # fsharp
   "language-fsharp"
 
   # ruby
@@ -40,7 +47,6 @@ packages: [
   "linter-jshint"
   "language-javascript-jsx"
 
-  # lint them all
   "linter-shellcheck"
   "linter-xmllint"
 
